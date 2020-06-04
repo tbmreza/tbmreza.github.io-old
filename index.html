@@ -1,88 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Reza Handzalah personal website" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="/doodle_R_48.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Reza Handzalah online</title>
-  </head>
-  <body>
-    <div class="title" style="margin: 5%;">
-      Reza Handzalah<span style="font-style: normal; font-weight: 400;"
-        >'s personal website</span
-      >
-    </div>
-    <div class="app">
-      <div class="content">
-        <h2>About me (late 2019)</h2>
-        <p>
-          I am currently employed by Idemia as Software Tester.
-        </p>
-        At this point in life, I have not decided what I want to specialize in
-        yet.
-        <div class="tooltip">
-          Optical comm. research
-          <span class="tooltiptext" style="width: 100px; margin-left: -50px;"
-            >undergraduate</span
-          >
-        </div>
-        ,
-        <div class="tooltip">
-          data science
-          <span class="tooltiptext" style="width: 80px; margin-left: -40px;"
-            >internship</span
-          >
-        </div>
-        , and now software engineering in smart card industry. At this rate I
-        can see myself being a generalist in technology, but no one can predict
-        the future.
-        <div style="margin-top: 1em;">
-          I find recent idea by web development community of moving
-          <div class="tooltip">
-            complexities to compiler
-            <span class="tooltiptext">
-              instead of virtual DOM or runtime (Svelte's and Rust's ideas,
-              respectively)</span
-            >
-          </div>
-          fascinating. My next full-time stint will be in web development.
-        </div>
-        <h2>Social media profiles</h2>
-        <ul>
-          <li>https://www.linkedin.com/in/reza-handzalah</li>
-          <li>
-            <a href="https://twitter.com/rezahandzalah"
-              >https://twitter.com/rezahandzalah</a
-            >
-          </li>
-          <li>https://github.com/tbmreza/</li>
-        </ul>
-        <h2>Facts about me</h2>
-        <ul>
-          <li>
-            I go by Tb M Reza Handzalah in legal documents.
-          </li>
-          <li>Acer Swift 3 (2018) owner.</li>
-          <li>Liverpool FC football twitter follower.</li>
-          <li>
-            My writings on medium, linkedin, etc. are terrible, I know. I'm
-            learning ok
-          </li>
-        </ul>
+
+<head>
+  <meta name="description" content="Reza Handzalah personal website" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/doodle_R_48.png" />
+
+  <title>Reza Handzalah online</title>
+</head>
+
+<style>
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
+      url('fonts/nunito-sans-v5-latin-regular.woff2') format('woff2'),
+      url('fonts/nunito-sans-v5-latin-regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Nunito Sans Black Italic'), local('NunitoSans-BlackItalic'),
+      url('fonts/nunito-sans-v5-latin-900italic.woff2') format('woff2'),
+      url('fonts/nunito-sans-v5-latin-900italic.woff') format('woff');
+  }
+
+  body {
+    font-family: "Nunito Sans", sans-serif;
+    color: darkslategray;
+    background-color: rgb(255, 252, 241);
+    margin: 0;
+  }
+
+  a {
+    color: darkblue;
+  }
+
+  .title {
+    font-weight: 900;
+    font-style: italic;
+    font-size: xx-large;
+  }
+
+  .content {
+    font-size: large;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    top: 100%;
+    left: 50%;
+    width: 180px;
+    margin-left: -90px;
+
+    background-color: #444;
+    color: #eee;
+    font-size: small;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .footer {
+    text-align: right;
+    background-color: darkslategray;
+    color: #eee;
+  }
+
+  .app {
+    margin: 0 11% 11% 11%;
+  }
+</style>
+
+<body>
+  <div class="title" style="margin: 5%;">
+    Reza Handzalah<span style="font-style: normal; font-weight: 400;">'s personal website</span>
+  </div>
+  <div class="app">
+    <div class="content">
+      <h2>About me (late 2019)</h2>
+      <p>
+        I am currently employed by Idemia as Software Tester.
+      </p>
+      At this point in life, I have not decided what I want to specialize in
+      yet.
+      <div class="tooltip">
+        Optical comm. research
+        <span class="tooltiptext" style="width: 100px; margin-left: -50px;">undergraduate</span>
       </div>
+      ,
+      <div class="tooltip">
+        data science
+        <span class="tooltiptext" style="width: 80px; margin-left: -40px;">internship</span>
+      </div>
+      , and now software engineering in smart card industry. At this rate I
+      can see myself being a generalist in technology, but no one can predict
+      the future.
+      <div style="margin-top: 1em;">
+        I find recent idea by web development community of moving
+        <div class="tooltip">
+          complexities to compiler
+          <span class="tooltiptext">
+            instead of virtual DOM or runtime (Svelte's and Rust's ideas,
+            respectively)</span>
+        </div>
+        fascinating. My next full-time stint will be in web development.
+      </div>
+      <h2>Social media profiles</h2>
+      <ul>
+        <li>https://www.linkedin.com/in/reza-handzalah</li>
+        <li>
+          <a href="https://twitter.com/rezahandzalah">https://twitter.com/rezahandzalah</a>
+        </li>
+        <li>https://github.com/tbmreza/</li>
+      </ul>
+      <h2>Facts about me</h2>
+      <ul>
+        <li>
+          I go by Tb M Reza Handzalah in legal documents.
+        </li>
+        <li>Acer Swift 3 (2018) owner.</li>
+        <li>Liverpool FC football twitter follower.</li>
+        <li>
+          My writings on medium, linkedin, etc. are terrible, I know. I'm
+          learning ok
+        </li>
+      </ul>
     </div>
-    <div class="footer">
-      <details open onclick="return false" style="padding: 2em;">
-        <summary>Work with me:</summary>
-        Send email to
-        <span style="color: white;">rezahandzalah@protonmail.com</span>
-      </details>
-    </div>
-  </body>
+  </div>
+  <div class="footer">
+    <details open onclick="return false" style="padding: 2em;">
+      <summary>Work with me:</summary>
+      Send email to
+      <span style="color: white;">rezahandzalah@protonmail.com</span>
+    </details>
+  </div>
+</body>
+
 </html>
