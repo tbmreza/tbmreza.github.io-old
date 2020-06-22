@@ -11,6 +11,7 @@
     font-style: italic;
     font-size: xx-large;
     padding: 1em 0;
+    display: inline-block;
   }
   .title:hover {
     cursor: pointer;
