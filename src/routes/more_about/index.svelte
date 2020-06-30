@@ -4,18 +4,18 @@
       "I want to be expert in my field.",
       "I think experts can teach, design, or hack things most effectively.",
       "I want to be a principal engineer with a PhD!",
-      "By setting such goal, I hope I can prolifically contribute to society on my way getting there. ###"
+      "By setting such goal, I hope I can prolifically contribute to society on my way getting there. #"
     ],
     [
-      "Watch Pewdiepie.",
+      "Watching Pewdiepie.",
       "Cleaning my gadgets and other personal belongings.",
       "Well, if you know me, you know I do not clean constantly.",
-      "But I do enjoy the activity as recreation! ###"
+      "But I do enjoy the activity as recreation! #"
     ],
     [
       "I don't have a pet, at the moment.",
       "Maybe sometime in the future I will get myself one.",
-      "It will be a cat, most likely. ###"
+      "It will be a cat, most likely. #"
     ],
     [
       "I follow football news, especially English Premier League.",
@@ -25,7 +25,7 @@
       "The community will decide if it's worthy of being on 'top' by up- or downvoting.",
       "Posts on 'top' or front page will be seen by more people. More viewers, more commenters.",
       "Discussions in the comment section are always quality.",
-      "I like open source, programming languages, and math posts more than the other. ###"
+      "I like open source, programming languages, and math posts more than the other. #"
     ]
   ];
 
@@ -43,10 +43,11 @@
 
 <style>
   .main {
-    margin: 1em auto;
+    margin: 1em;
+    max-width: 100vw;
   }
   .card {
-    height: 100px;
+    height: 120px;
     width: 330px;
     position: absolute;
     color: white;
@@ -100,7 +101,7 @@
   }
   .options {
     margin-bottom: 3em;
-    min-height: 130px;
+    min-height: 140px;
   }
   .options button:hover {
     cursor: crosshair;
@@ -110,9 +111,8 @@
     max-width: 290px;
     background-color: #222;
     color: white;
-    margin: 3px 0;
+    margin: 5px 0;
     text-align: left;
-    font-size: 75%;
   }
   .clicked {
     font-weight: bold;
@@ -171,7 +171,7 @@
     <div class="card card--front" on:click={next}>
       <div class="reza">Reza</div>
       <div class="caption">
-        {play ? currentText : 'Hi. I am sorry you found my site. ###'}
+        {play ? currentText : 'Hi. I am sorry you found my site. #'}
       </div>
     </div>
     <div class="card card--mid">
