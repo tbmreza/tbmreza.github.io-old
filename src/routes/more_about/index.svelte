@@ -85,11 +85,13 @@
     transform: rotate(5deg) translate(21px, -13px);
     width: 315px;
   }
-  .chibi {
-    width: 200px;
-    transform: rotate(-3deg) translate(170px, -150px);
+
+  .card--mid img {
+    width: 120px;
+    overflow: hidden;
+    transform: rotate(-3deg) translate(215px, -128px);
   }
-  .chibi:hover {
+  .card--mid img:hover {
     cursor: crosshair;
   }
   .reza {
@@ -104,7 +106,7 @@
     min-height: 140px;
   }
   .options button:hover {
-    cursor: crosshair;
+    cursor: pointer;
   }
   .options button {
     display: block;
@@ -176,9 +178,8 @@
     </div>
     <div class="card card--mid">
       <img
-        src="./r1000.png"
+        src="./me.png"
         alt="me"
-        class="chibi"
         on:click={() => {
           play = false;
           i = 0;

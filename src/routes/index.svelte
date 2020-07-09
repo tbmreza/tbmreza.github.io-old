@@ -4,10 +4,6 @@
 </script>
 
 <style>
-  a {
-    color: darkblue;
-  }
-
   .section {
     margin-bottom: 1em;
   }
