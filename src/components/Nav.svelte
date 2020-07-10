@@ -62,9 +62,9 @@
     <li>
       <a
         rel="prefetch"
-        aria-current={segment === 'more_about' ? 'page' : undefined}
-        href="more_about">
-        more about
+        aria-current={segment === 'projects' ? 'page' : undefined}
+        href="projects">
+        projects
       </a>
     </li>
     <li>
