@@ -24,7 +24,7 @@
 </svelte:head>
 
 <div class="main">
-  <h2>Recent posts</h2>
+  <h2>All posts</h2>
 
   <ul>
     {#each posts as post}

@@ -87,9 +87,9 @@
     courses. I am fortunate enough to early gain experience in each of them,
     though briefly.
     <p>
-      In the short to medium term, I am focused on building my portfolio as an
-      application developer. I code primarily in JavaScript and Rust. I always
-      look to collaborate, so feel free to contact me.
+      In the short to medium term, I am focused on building my portfolio as a
+      programmer. I code primarily in JavaScript and Rust. I always look to
+      collaborate, so feel free to contact me.
     </p>
   </div>
   <div class="section">

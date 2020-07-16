@@ -4,6 +4,7 @@
 import { post2 } from "./stories/Gojek_Clone";
 import { post1 } from "./stories/New_Blog";
 
+// fs to read all in folder
 let posts = [post2, post1];
 
 posts.forEach((post) => {

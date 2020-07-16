@@ -15,7 +15,7 @@
 
 <style>
   .ps {
-    margin: 1em;
+    margin: 1em 1em 1em 0;
   }
   .project {
     background-color: #edebdd;
@@ -55,43 +55,51 @@
   }
 </style>
 
-<div class="ps">
-  {#each ps as p}
-    <div class="project">
-      <div class="top">
-        <div class="lang">
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-            class="_crate-icon_87huyj">
-            <path
-              d="M16 32.107c8.837 0 16-7.164 16-16 0-8.837-7.163-16-16-16s-16
-              7.163-16 16c0 8.836 7.163 16 16 16z"
-              fill={p.lang === 'rust' ? '#FFF' : '#B13B89'} />
-            <path
-              d="M20.247 12.548L16 10l-4.224 2.535 4.247 2.452 4.224-2.439zM21
-              14.423l-4 2.31V21.4l4-2.4v-4.577zm-10-.027V19l4
-              2.4v-4.695l-4-2.309zM16 8l7 4v8l-7 4-7-4v-8l7-4z"
-              fill={p.lang === 'rust' ? '#B13B89' : '#FFF'} />
-          </svg>
+<svelte:head>
+  <title>Reza Handzalah online: Projects</title>
+</svelte:head>
 
+<div class="main">
+  <h2>Projects I am comfortable to show</h2>
+
+  <div class="ps">
+    {#each ps as p}
+      <div class="project">
+        <div class="top">
+          <div class="lang">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              class="_crate-icon_87huyj">
+              <path
+                d="M16 32.107c8.837 0 16-7.164 16-16 0-8.837-7.163-16-16-16s-16
+                7.163-16 16c0 8.836 7.163 16 16 16z"
+                fill={p.lang === 'rust' ? '#FFF' : '#B13B89'} />
+              <path
+                d="M20.247 12.548L16 10l-4.224 2.535 4.247 2.452 4.224-2.439zM21
+                14.423l-4 2.31V21.4l4-2.4v-4.577zm-10-.027V19l4
+                2.4v-4.695l-4-2.309zM16 8l7 4v8l-7 4-7-4v-8l7-4z"
+                fill={p.lang === 'rust' ? '#B13B89' : '#FFF'} />
+            </svg>
+
+          </div>
+          <div class="name">{p.name}</div>
+          <div class="size">{p.size}</div>
         </div>
-        <div class="name">{p.name}</div>
-        <div class="size">{p.size}</div>
+        <div class="bottom">
+          <div class="demo">
+            <a href={p.demo}>Demo</a>
+          </div>
+          <div class="code" id="mid">
+            <a href={p.code}>Code</a>
+          </div>
+          <div class="blog">
+            <a href={p.blog}>Blog</a>
+          </div>
+        </div>
       </div>
-      <div class="bottom">
-        <div class="demo">
-          <a href={p.demo}>Demo</a>
-        </div>
-        <div class="code" id="mid">
-          <a href={p.code}>Code</a>
-        </div>
-        <div class="blog">
-          <a href={p.blog}>Blog</a>
-        </div>
-      </div>
-    </div>
-  {/each}
+    {/each}
+  </div>
 </div>

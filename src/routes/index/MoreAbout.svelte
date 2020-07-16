@@ -42,10 +42,6 @@
 </script>
 
 <style>
-  .main {
-    margin: 1em;
-    max-width: 100vw;
-  }
   .card {
     height: 120px;
     width: 330px;
@@ -128,63 +124,60 @@
   }
 </style>
 
-<div class="main">
+<div class="options">
+  <button
+    class:clicked={i === 0 && play}
+    on:click={() => {
+      play = true;
+      i = 0;
+      j = 0;
+    }}>
+    What is your long term goal?
+  </button>
+  <button
+    class:clicked={i === 1}
+    on:click={() => {
+      play = true;
+      i = 1;
+      j = 0;
+    }}>
+    What is your favorite leisure activity?
+  </button>
+  <button
+    class:clicked={i === 2}
+    on:click={() => {
+      play = true;
+      i = 2;
+      j = 0;
+    }}>
+    Do you have a pet?
+  </button>
+  <button
+    class:clicked={i === 3}
+    on:click={() => {
+      play = true;
+      i = 3;
+      j = 0;
+    }}>
+    What kind of news do you follow?
+  </button>
+</div>
 
-  <div class="options">
-    <button
-      class:clicked={i === 0 && play}
+<div class="cards">
+  <div class="card card--front" on:click={next}>
+    <div class="reza">Reza</div>
+    <div class="caption">
+      {play ? currentText : 'Hi. I am sorry you found my site. #'}
+    </div>
+  </div>
+  <div class="card card--mid">
+    <img
+      src="./me.webp"
+      alt="me"
       on:click={() => {
-        play = true;
+        play = false;
         i = 0;
-        j = 0;
-      }}>
-      What is your long term goal?
-    </button>
-    <button
-      class:clicked={i === 1}
-      on:click={() => {
-        play = true;
-        i = 1;
-        j = 0;
-      }}>
-      What is your favorite leisure activity?
-    </button>
-    <button
-      class:clicked={i === 2}
-      on:click={() => {
-        play = true;
-        i = 2;
-        j = 0;
-      }}>
-      Do you have a pet?
-    </button>
-    <button
-      class:clicked={i === 3}
-      on:click={() => {
-        play = true;
-        i = 3;
-        j = 0;
-      }}>
-      What kind of news do you follow?
-    </button>
+      }} />
   </div>
-
-  <div class="cards">
-    <div class="card card--front" on:click={next}>
-      <div class="reza">Reza</div>
-      <div class="caption">
-        {play ? currentText : 'Hi. I am sorry you found my site. #'}
-      </div>
-    </div>
-    <div class="card card--mid">
-      <img
-        src="./me.png"
-        alt="me"
-        on:click={() => {
-          play = false;
-          i = 0;
-        }} />
-    </div>
-    <div class="card card--back" />
-  </div>
+  <div class="card card--back" />
 </div>
