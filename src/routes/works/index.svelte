@@ -3,12 +3,24 @@
     {
       lang: "js",
       name: "this website",
-      size: "7306 LOC",
-      // 			in project root:
-      // 			git ls-files | xargs wc -l *
+      size: "642 KB",
+      // https://github.com/settings/repositories
       demo: "https://tbmreza.github.io/",
-      code: "https://github.com/tbmreza/tbmreza.github.io",
-      blog: "#"
+      code: "https://github.com/tbmreza/tbmreza.github.io"
+    },
+    {
+      lang: "js",
+      name: "gojek.com clone",
+      size: "1.41 MB",
+      demo: "https://tbmreza.github.io/",
+      code: "https://github.com/tbmreza/gojek-com-clone"
+    },
+    {
+      lang: "rust",
+      name: "complete rustlings",
+      size: "237 KB",
+      demo: "https://tbmreza.github.io/",
+      code: "https://github.com/rust-lang/rustlings/releases/tag/3.0.0"
     }
   ];
 </script>
@@ -38,6 +50,8 @@
   .top .name {
     font-size: 24px;
     margin: 0 8px;
+    line-height: 24px;
+    width: 175px;
   }
   .top .size {
     font-size: 12px;
@@ -60,7 +74,7 @@
 </svelte:head>
 
 <div class="main">
-  <h2>Projects I am comfortable to show</h2>
+  <h2>Projects I managed to finish</h2>
 
   <div class="ps">
     {#each ps as p}
@@ -94,9 +108,6 @@
           </div>
           <div class="code" id="mid">
             <a href={p.code}>Code</a>
-          </div>
-          <div class="blog">
-            <a href={p.blog}>Blog</a>
           </div>
         </div>
       </div>
