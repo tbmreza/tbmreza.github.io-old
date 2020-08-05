@@ -9,10 +9,17 @@
   .title {
     font-weight: 900;
     font-style: italic;
-    font-size: x-large;
+    font-size: large;
     padding: 1em 0;
     display: inline-block;
   }
+
+  @media only screen and (min-width: 375px) {
+  .title {
+      font-size: x-large;
+    }
+  }
+  
   .title:hover {
     cursor: pointer;
   }
