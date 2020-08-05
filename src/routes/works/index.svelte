@@ -32,7 +32,7 @@
   .project {
     background-color: #edebdd;
     border-radius: 5px;
-    width: 300px;
+    width: 310px;
     margin-bottom: 1em;
   }
   .top,

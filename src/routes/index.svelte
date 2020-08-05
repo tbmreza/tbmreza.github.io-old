@@ -1,6 +1,6 @@
 <script>
-  import Title from "./index/Title.svelte";
-  import MoreAbout from "./index/MoreAbout.svelte";
+  import Title from "./about/Title.svelte";
+  import MoreAbout from "./about/MoreAbout.svelte";
 </script>
 
 <style>

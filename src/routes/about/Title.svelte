@@ -1,5 +1,5 @@
 <script>
-  let up = false;
+  let up = true;
   function click() {
     up = !up;
   }
@@ -9,7 +9,7 @@
   .title {
     font-weight: 900;
     font-style: italic;
-    font-size: xx-large;
+    font-size: x-large;
     padding: 1em 0;
     display: inline-block;
   }
@@ -30,6 +30,8 @@
 </style>
 
 <div class="title" class:up on:click={click}>
-  Reza Handzalah<span>'s</span>
-  <div>personal website</div>
+  <h2>
+    Reza Handzalah<span>'s</span>
+    <div>personal website</div>
+  </h2>
 </div>
