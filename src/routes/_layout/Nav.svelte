@@ -59,12 +59,20 @@
         works
       </a>
     </li>
-    <li>
+    <!-- <li>
       <a
         rel="prefetch"
         aria-current={segment === 'blog' ? 'page' : undefined}
         href="blog">
         blog
+      </a>
+    </li> -->
+    <li>
+      <a
+        rel="prefetch"
+        aria-current={segment === 'resume' ? 'page' : undefined}
+        href="resume">
+        résumé
       </a>
     </li>
   </ul>

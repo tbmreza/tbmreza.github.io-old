@@ -54,6 +54,13 @@
   .footer span {
     color: white;
   }
+  ul {
+    padding-left: 1em;
+  }
+  #hide-bullets {
+    padding-left: 0;
+    list-style-type: none;
+  }
 </style>
 
 <svelte:head>
@@ -102,23 +109,49 @@
           https://twitter.com/rezahandzalah
         </a>
       </li>
-      <li>https://github.com/tbmreza/</li>
+      <li>
+        <code>tbmreza</code>
+        on pretty much everywhere else (like github or discord).
+      </li>
     </ul>
   </div>
   <div class="section">
 
-    <h2>Facts about me</h2>
-    <ul>
-      <li>Tb M Reza Handzalah in legal documents.</li>
-      <li>Acer Swift 3 (2018) owner.</li>
-      <li>Liverpool FC football twitter follower.</li>
+    <h2>More about me</h2>
+    <ul id="hide-bullets">
+      <li>
+        <details>
+          <summary>My name is Tb M Reza Handzalah in legal documents.</summary>
+          <p>
+            The firstname-lastname format in forms is not inclusive! I am also a
+            proponent to the idea that computer programmers shouldn't limit
+            themselves to ASCII.
+          </p>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>I'm a moderate Liverpool FC fan.</summary>
+          <p>
+            I follow the news, occasionally engage in the football twitter
+            discussion, watch match highlights from YouTube, but that's about
+            it. I even rarely watch them live. But before anyone jumps at me for
+            being a glory hunter, I have been doing that since highschool. Do
+            talk about it when we meet! I'll definitely have football opinion to
+            share and it will make me happy.
+          </p>
+        </details>
+      </li>
     </ul>
   </div>
   <div class="section">
 
     <details>
       <summary>
-        <h2>More about me</h2>
+        <h2>
+          <span style="font-style: italic">More</span>
+          about me
+        </h2>
       </summary>
       <div class="more-about">
         <MoreAbout />
@@ -129,7 +162,7 @@
 </div>
 <div class="footer">
   <details open onclick="return false" style="padding: 2em;">
-    <summary>Work with me:</summary>
+    <summary>Best way to reach me:</summary>
     Send email to
     <span>rezahandzalah@protonmail.com</span>
   </details>
