@@ -167,7 +167,7 @@
   <div class="card card--front" on:click={next}>
     <div class="reza">Reza</div>
     <div class="caption">
-      {play ? currentText : 'Hi. I am sorry you found my site. #'}
+      {play ? currentText : 'Hi. Sorry you found my site. I made this so you can click some more before leaving. #'}
     </div>
   </div>
   <div class="card card--mid">

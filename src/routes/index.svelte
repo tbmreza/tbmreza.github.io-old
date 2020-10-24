@@ -61,6 +61,9 @@
     padding-left: 0;
     list-style-type: none;
   }
+  code {
+    color: black;
+  }
 </style>
 
 <svelte:head>
@@ -73,30 +76,32 @@
   </div>
   <div class="section">
     <h2>About me</h2>
-    <p>I am currently employed by IDEMIA as Software Engineer (Validation).</p>
-    I have diverse experience:
+    <p>
+      I am currently employed by IDEMIA. I am assigned to a team that work on
+      Card Personalization System.
+    </p>
+    Before breaking into software engineering in smart card industry, I had had
+    some experience in
     <div class="tooltip">
       optical comm. research
       <span class="tooltiptext" style="width: 100px; margin-left: -50px;">
         undergraduate
       </span>
     </div>
-    ,
+    and
     <div class="tooltip">
       data science
       <span class="tooltiptext" style="width: 80px; margin-left: -40px;">
         internship
       </span>
     </div>
-    , and now software engineering in smart card industry. Telkom University's
-    telecommunication engineering program that I took included Optical
+    . The telecommunication engineering program that I took included Optical
     Communication System, Computer Vision, and Mobile Applications elective
-    courses. I am fortunate enough to early gain experience in each of them,
-    though briefly.
+    courses. I am fortunate enough to early gain practical knowledge in each of
+    them, though briefly.
     <p>
       In the short to medium term, I am focused on building my portfolio as a
-      programmer. I code primarily in JavaScript and Rust. I always look to
-      collaborate, so feel free to contact me.
+      programmer. I always look to collaborate, so feel free to contact me.
     </p>
   </div>
   <div class="section">
