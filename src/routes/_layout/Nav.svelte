@@ -8,6 +8,8 @@
     font-weight: 300;
     padding: 0 1em;
     background-color: rgb(255, 252, 241);
+    display: flex;
+    justify-content: end;
   }
 
   ul {
@@ -28,18 +30,8 @@
   }
 
   [aria-current] {
-    position: relative;
-    display: inline-block;
-  }
-
-  [aria-current]::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: darkcyan;
-    display: block;
-    bottom: -1px;
+    background-color: lightgray;
+    color: rgb(30 30 30);
   }
 
   a {
