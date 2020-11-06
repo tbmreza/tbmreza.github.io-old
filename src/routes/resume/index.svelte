@@ -573,9 +573,7 @@
                   </span>
                 </a>
               </h3>
-              <p class="leading-normal text-md text-gray-650">
-                Svelte | Phaser
-              </p>
+              <p class="leading-normal text-md text-gray-650">Svelte</p>
             </header>
             <p class="mt-2.1 text-md text-gray-700 leading-normal">
               My solutions to freeCodeCamp's curated list of common challenges
@@ -599,7 +597,7 @@
                 </span>
               </a>
             </h3>
-            <p class="leading-normal text-md text-gray-650">Rust | C++</p>
+            <p class="leading-normal text-md text-gray-650">Rust</p>
           </header>
           <p class="mt-2.1 text-md text-gray-700 leading-normal">
             Learning compilers and programming languages by doing project ideas
@@ -720,7 +718,7 @@
                 </a>
               </li>
               <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                <a href="//twitter.com/webpraktikos" class="group">
+                <a href="//twitter.com/rezahandzalah" class="group">
                   twitter.com/rezahandzalah
                   <span
                     class="inline-block text-gray-550 print:text-black
