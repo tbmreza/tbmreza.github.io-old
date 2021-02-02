@@ -514,7 +514,7 @@
                 IDEMIA, Jakarta R&D Office
               </h3>
               <p class="leading-normal text-md text-gray-650">
-                Aug 2019 – Jan 2021 | Software Engineer, Validation/Tester
+                Aug 2019 – present | Software Engineer, Validation/Tester
               </p>
             </header>
             <p class="mt-2.1 text-md text-gray-700 leading-normal">
